@@ -8,7 +8,7 @@ Queue.prototype = {
   enqueue: function(data) {
     var newestIndex = this.newestIndex++
     this._storage[newestIndex] = data
-  }
+  },
   dequeue: function() {
     var newestIndex = this.newestIndex,
         oldestIndex = this.oldestIndex,
@@ -20,7 +20,7 @@ Queue.prototype = {
       
       return deleteData
     }
-  }
+  },
   size: function() {
     return this.newestIndex - this.oldestIndex
   }
