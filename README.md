@@ -1,2 +1,2 @@
 # data-struct
-common data structs described by js
+common data structures described by js
