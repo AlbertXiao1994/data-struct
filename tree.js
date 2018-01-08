@@ -9,6 +9,7 @@ function Tree(data) {
   this._root = node
 }
 
+// 深度优先搜寻
 Tree.prototype.traverseDF = function(callback) {
   // 递归、立刻执行函数
   (function recurse(currentNode) {
@@ -20,6 +21,7 @@ Tree.prototype.traverseDF = function(callback) {
   }(this._root))
 }
 
+// 广度优先搜索
 Tree.prototype.traverseBF = function(callback) {
   var queue = new Queue()
   queue.enqueue(this._root)
