@@ -20,7 +20,7 @@ DoubleList.prototype = {
       this.tail = node
     } else {
       this.head = node
-      this.tail
+      this.tail = node
     }
 
     this._length++
